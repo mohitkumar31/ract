@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <!-- <link rel="stylesheet" href="style.css">
+     -->
+     <style>
+        body{
+
+font-family: 'TimesNewRoman', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 20px;
+
+
+background-color: white;
+}
+
+.nav{
+    
+list-style: none;
+  margin-top: 10px;
+  display: flex;
+    
+
+}
+
+.logo{
+    
+ margin-left: 30%;
+    border-radius: 5px;
+    height: 150px;
+    width: 150px;
+    
+} 
+.home{
+    list-style: none;
+   align-items: center;
+    
+
+}
+ .home-items{
+   
+margin-left: 20%;
+  
+  width: max-content;
+  align-items: center;
+  
+  
+} 
+
+#id1{
+    margin-top: 10%;    
+   
+} 
+
+
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+form {
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+div {
+  margin-bottom: 10px;
+}
+
+label {
+  display: inline-block;
+  width: 150px;
+}
+
+input[type="text"],
+input[type="date"] {
+  width: 250px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+        </style>
+</head>
+
+
+<body>
+    <header>
+    <div class="nav">
+    <img src="https://pbs.twimg.com/profile_images/1511606662129655815/NEEARq-c_400x400.jpg" class="logo">
+    <ul class="home">
+        <li class="home-items" id="id1">THE RAMCO CEMENTS LTD </li>
+        <li class="home-items" id="id2">K.S.R NAGAR </li>
+        <li class="home-items" id="id3">JAYANTHIPURAM</li>
+       
+        
+    </ul>
+    </div>
+</header>
+
+<h1>Vehicle Requisition Form</h1>
+  <form id="requisitionForm" action="/submit" method="POST">
+    <!-- onsubmit="handleSubmit(event)" -->
+    
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div>
+      <label for="designation">Designation:</label>
+      <input type="text" id="designation" name="designation" required>
+    </div>
+    <div>
+      <label for="place">Place of Visit:</label>
+      <input type="text" id="place" name="place" required>
+    </div>
+    <div>
+      <label for="purpose">Purpose of Visit:</label>
+      <input type="text" id="purpose" name="purpose" required>
+    </div>
+    <div>
+      <label for="dateOfVisit">Date of Visit:</label>
+      <input type="date" id="dateOfVisit" name="dateOfVisit" required>
+    </div>
+    <div>
+      <label for="vehicle">Vehicle to be Reported at:</label>
+      <input type="text" id="vehicle" name="vehicle" required>
+    </div>
+    <div>
+      <label>Type of Requisition:</label>
+      <input type="radio" id="official" name="requisitionType" value="official" required>
+      <label for="official">Official</label>
+      <input type="radio" id="personal" name="requisitionType" value="personal" required>
+      <label for="personal">Personal</label>
+    </div>
+    <div>
+      <label for="signatureDept">Dept/Div Head Signature:</label>
+      <input type="text" id="signatureDept" name="signatureDept">
+    </div>
+    <div>
+      <label for="signaturePresident">President-Mfg Signature:</label>
+      <input type="text" id="signaturePresident" name="signaturePresident">
+    </div>
+    <div>
+      <label for="Remarks">Remarks</label>
+      <input type="text" id="Remarks" name="Remarks">
+    </div>
+    <button type="submit" name="submit" value="Submit">Submit</button>
+  </form>
+</body>
+
+
+</html>
